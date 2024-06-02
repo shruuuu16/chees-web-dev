@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="styles.css" rel="stylesheet">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0px ;
+  padding: 0 px;
+  overflow: hidden;
+  background-color: black ;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: inline-block;
+  margin-left: 50px ;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a1{
+  display: inline-block;
+  margin-left: 50px ;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: aqua;
+}
+li a1:hover{
+    background-color: aqua;
+}
+
+</style>
+</head>
+<body style="background-color:yellowgreen;">
+
+<ul>
+    <li><a1 href="#register">Register</a1> </li>
+  <li><a class="active" href="#home">Tutorials</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+
+</ul>
+
+  <div class="section">
+        <img src="C:\Users\shrey\OneDrive\Pictures\Screenshots\Screenshot 2024-04-14 133747.png" alt=""/>
+        <div class="text">
+      <h1>The first free personalised chess tutorship</h1>
+      <p> Ever wanted to learn chess but didnt find any convinent way to learn?<br>
+    Venny offer a place where with free chess tutorship, you can learn at your own pace</p>
+    <br>
+    <br>
+    <button class="btn1">Learn More</button>
+    <button class="btn-open-popup" onclick="togglePopup()">Sign Up</button>
+	<div id="popupOverlay" class="overlay-container">
+		<div class="popup-box">
+			<h2 style="color: green;">Popup Form</h2>
+			<form class="form-container">
+				<label class="form-label" for="name">Username:</label>
+				<input class="form-input" type="text" placeholder="Enter Your Username" id="name" name="name" required>
+				<label class="form-label" for="email">Email:</label>
+				<input class="form-input" type="email" placeholder="Enter Your Email" id="email" name="email" required>
+				<button class="btn-submit" type="submit">Submit</button>
+			</form>
+			<button class="btn-close-popup" onclick="togglePopup()">Close</button>
+		</div>
+	</div>
+    </div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
